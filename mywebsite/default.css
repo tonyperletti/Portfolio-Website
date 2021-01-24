@@ -97,7 +97,6 @@ h6 {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3em 30em;
   grid-template-areas:
     "nav-wrapper nav-wrapper"
     "left-column right-column";
@@ -141,11 +140,6 @@ h6 {
   background-color: #2aca3e;
 }
 
-#profile_pic {
-  max-width: 1px;
-  height: auto;
-}
-
 .browser-dot {
   background-color: black;
   height: 15px;
@@ -159,6 +153,15 @@ h6 {
 }
 .left-column {
   grid-area: left-column;
+}
+
+#profile_pic {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 2px solid var(--borderColor);
 }
 .right-column {
   grid-area: right-column;
