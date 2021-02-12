@@ -150,14 +150,6 @@ h6 {
   overflow: auto;
 }
 
-.s3 {
-
-}
-
-.s4 {
-
-}
-
 .main-container {
   width: 1200px;
   margin: 0 auto;
@@ -258,9 +250,9 @@ h6 {
 
 .right-column {
   grid-area: right-column;
-  display: grid;
-  align-content: center;
-
+  /* display: grid;
+  align-content: center; */
+  padding-left: 300px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
