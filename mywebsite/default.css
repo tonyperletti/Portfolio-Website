@@ -1,5 +1,5 @@
 :root {
-  --mainColor: #eaeaea;
+  --mainColor: silver;
   --secondaryColor: #fff;
 
   --borderColor: #c1c1c1;
@@ -325,6 +325,10 @@ h6 {
   padding-top: 50px;
   gap: 100px;
 }
+
+/* #about-me {
+
+} */
 
 #skills {
   display: flex;
