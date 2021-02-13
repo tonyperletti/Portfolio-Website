@@ -17,6 +17,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
 }
@@ -150,6 +151,14 @@ h6 {
   overflow: auto;
 }
 
+/* section three is currently set to class of s1 */
+
+#s4 {
+  background-color: var(--secondaryColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
+
 .main-container {
   width: 1200px;
   margin: 0 auto;
@@ -179,15 +188,20 @@ h6 {
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75); */
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 100px;
+
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    "nav-wrapper nav-wrapper"
-    "left-column right-column";
+    "nav-wrapper nav-wrapper nav-wrapper"
+    "left-column middle-column right-column";
 }
 
 
 .left-column {
   grid-area: left-column;
+  padding-left: 100px;
+  /* display: grid; */
+  /* align-content: right; */
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -195,8 +209,9 @@ h6 {
 #profile_pic {
   display: block;
   margin: 0 auto;
-  height: 200px;
-  width: 200px;
+  /* margin-bottom: 200px; */
+  height: 260px;
+  width: 300px;
   object-fit: cover;
   border: 2px solid var(--borderColor);
 }
@@ -250,10 +265,10 @@ h6 {
 
 .right-column {
   grid-area: right-column;
-  /* display: grid;
-  align-content: center; */
-  padding-left: 300px;
-  padding-top: 50px;
+  display: grid;
+  align-content: right;
+  /* padding-left: 300px; */
+  padding-top: 57px;
   padding-bottom: 50px;
 }
 
@@ -267,7 +282,7 @@ h6 {
 
 #preview {
   width: 300px;
-  height: 180px;
+  height: 260px;
   border: 1.5px solid #17a2b8;
   background-color: var(--previewBg);
   padding: 15px;
