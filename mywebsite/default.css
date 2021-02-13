@@ -200,8 +200,8 @@ h6 {
 .left-column {
   grid-area: left-column;
   padding-left: 100px;
-  /* display: grid; */
-  /* align-content: right; */
+  display: grid;
+  align-content: right;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -219,6 +219,11 @@ h6 {
 #theme-options-wrapper {
   display: flex;
   justify-content: center;
+}
+
+#personalize-theme {
+  /* color: red; */
+  -webkit-text-stroke: 1px var(--secondaryColor);
 }
 
 .theme-dot {
