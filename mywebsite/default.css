@@ -216,14 +216,19 @@ h6 {
   border: 2px solid var(--borderColor);
 }
 
+#personalize-theme {
+  opacity: 5%;
+  -webkit-text-stroke: 1px var(--secondaryColor);
+}
+
+.theme-area:hover #personalize-theme, .theme-area:hover #settings-note {
+  /* color: orangered; */
+  opacity: 100%;
+}
+
 #theme-options-wrapper {
   display: flex;
   justify-content: center;
-}
-
-#personalize-theme {
-  /* color: red; */
-  -webkit-text-stroke: 1px var(--secondaryColor);
 }
 
 .theme-dot {
@@ -263,6 +268,7 @@ h6 {
 }
 
 #settings-note {
+  opacity: 5%;
   font-size: 12px;
   font-style: italic;
   text-align: center;
@@ -272,7 +278,6 @@ h6 {
   grid-area: right-column;
   display: grid;
   align-content: right;
-  /* padding-left: 300px; */
   padding-top: 57px;
   padding-bottom: 50px;
 }
