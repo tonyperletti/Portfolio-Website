@@ -196,10 +196,9 @@ h6 {
     "left-column middle-column right-column";
 }
 
-
 .left-column {
   grid-area: left-column;
-  padding-left: 100px;
+  /* padding-left: 100px; */
   display: grid;
   align-content: right;
   padding-top: 50px;
