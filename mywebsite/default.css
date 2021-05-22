@@ -254,23 +254,28 @@ h6 {
 }
 
 .theme-dot:hover {
+  /* box-sizing: border-box; */
   border-width: 5px;
 
 }
 
 #light-mode {
+  /* box-sizing: border-box; */
   background-color: #fff;
 }
 
 #blue-mode {
+  /* box-sizing: border-box; */
   background-color: #192734;
 }
 
 #green-mode {
+  /* box-sizing: border-box; */
   background-color: #78866b;
 }
 
 #purple-mode {
+  /* box-sizing: border-box; */
   background-color: #7e4c74;
 }
 
